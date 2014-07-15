@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fitnesstrainer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="RhythmMaker"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.fitnesstrainer.Splash"
+            android:label="@string/title_activity_start"
+            android:theme="@android:style/Theme.NoTitleBar" >
+>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.fitnesstrainer.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.fitnesstrainer.Instruction"
+            android:label="@string/title_activity_instruction"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.fitnesstrainer.Play"
+            android:label="@string/title_activity_play"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.fitnesstrainer.Setting"
+            android:label="@string/title_activity_setting"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.fitnesstrainer.MyApp"
+            android:label="@string/title_activity_my_app" >
+        </activity>
+    </application>
+
+</manifest>

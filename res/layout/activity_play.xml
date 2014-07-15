@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Play" 
+    >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/bfanhui" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignRight="@+id/button1"
+        android:layout_marginBottom="42dp"
+        android:layout_weight="1"
+        android:background="@drawable/btingzhi"/>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stop"
+        android:layout_alignBottom="@+id/stop"
+        android:layout_marginRight="40dp"
+        android:layout_toLeftOf="@+id/stop"
+        android:layout_weight="1"
+        android:background="@drawable/bluyin"  />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stop"
+        android:layout_alignBottom="@+id/stop"
+        android:layout_marginLeft="41dp"
+        android:layout_toRightOf="@+id/stop"
+        android:layout_weight="1"
+        android:background="@drawable/bbofang" />
+
+</RelativeLayout>
